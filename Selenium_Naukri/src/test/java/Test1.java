@@ -79,7 +79,24 @@ public class Test1 {
         
         Thread.sleep(10000);
         
-     // Simulate pressing Enter to confirm the file selection dialog
+        StringSelection fileName = new StringSelection(relativeFilePath);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(fileName, null);
+        
+     //   Simulate pressing Enter to confirm the file selection dialog
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+     // Pause for a moment to allow the file to be selected
+        Thread.sleep(10000);
+        
+     // Simulate pressing Control+V to paste the file path into the dialog
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        
+        Thread.sleep(10000);
+        
+     // Simulate pressing Enter again to confirm the file upload
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         
