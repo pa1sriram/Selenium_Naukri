@@ -32,6 +32,9 @@ public class Test1 {
 		//Select login key to login
 		driver.findElement(By.xpath("//button[text()=\"Login\"]")).click();
 		
+		System.out.println(driver.getTitle());
+		
+		
 		//View profile
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
 		
@@ -69,15 +72,11 @@ public class Test1 {
         robot.keyPress(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_CONTROL);
-        
         Thread.sleep(10000);
         
      // Simulate pressing Enter again to confirm the file upload
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
-        
-        
-        Thread.sleep(10000);
         
         StringSelection fileName = new StringSelection(relativeFilePath);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(fileName, null);
@@ -100,7 +99,7 @@ public class Test1 {
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         
-
+        System.out.println(driver.findElement(By.xpath("//div//span[@id=\"attachCVMsgBox\"]//p[2]")).getText());
 			
 		//Select Burger button for logout option
 		driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
