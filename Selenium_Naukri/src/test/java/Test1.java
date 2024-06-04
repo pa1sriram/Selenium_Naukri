@@ -5,6 +5,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.time.Duration;
+import java.util.List;
 import java.util.StringTokenizer;
 
 import org.openqa.selenium.By;
@@ -18,11 +19,11 @@ public class Test1 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		// Disable bookmarks bar using Chrome options
-		ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-bookmarks-bar");
+//		ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--disable-bookmarks-bar");
         
 	    //Creating driver instance
-	    ChromeDriver driver= new ChromeDriver(options);
+	    ChromeDriver driver= new ChromeDriver();
         
 		//Implicit wait wait which applicable for all web elements
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -121,6 +122,29 @@ public class Test1 {
         
         System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyResumeHead\"]//div//div//div//div[@class=\"cnt\"]//p[2]")).getText());
 		
+//        key Skills updation
+        driver.findElement(By.xpath("//div[@class='widgetHead typ-16Bold']/span[2]")).click();
+        List<WebElement> skills=driver.findElements(By.xpath("//div[@class=\"waves-effect chip\"]/span"));
+        
+        for(WebElement skill: skills) {
+        	if(skill.getText().equals("Java")) {
+        		driver.findElement(By.xpath("//div[@title='Java']//a[@class='material-icons close'][normalize-space()='Cross']"));
+        		break;
+        	}
+        }
+        
+        driver.findElement(By.xpath("//input[@id=\"keySkillSugg\"]")).sendKeys("Java");
+        
+        List<WebElement> skillList=driver.findElements(By.xpath("//li//div[@class=\"Sbtn\"]"));
+        
+        for(WebElement skill:skillList) {
+        	if(skill.getText().equals("Java")) {
+        		skill.click();
+        	}
+        }
+        
+        driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]"));
+        
 		//Select Burger button for logout option
 		driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
 		Thread.sleep(5000);
