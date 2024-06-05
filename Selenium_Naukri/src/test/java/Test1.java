@@ -6,12 +6,10 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.time.Duration;
 import java.util.List;
-import java.util.StringTokenizer;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,7 +21,9 @@ public class Test1 {
 //        options.addArguments("--disable-bookmarks-bar");
         
 	    //Creating driver instance
-	    ChromeDriver driver= new ChromeDriver();
+		ChromeDriver driver= new ChromeDriver();
+		
+		JavascriptExecutor js=driver;
         
 		//Implicit wait wait which applicable for all web elements
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -143,7 +143,8 @@ public class Test1 {
         	}
         }
         
-        driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]"));
+        js.executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")));
+        driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")).click();
         
 		//Select Burger button for logout option
 		driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
