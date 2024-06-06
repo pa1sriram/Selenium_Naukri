@@ -26,7 +26,7 @@ public class Test1 {
 		JavascriptExecutor js=driver;
         
 		//Implicit wait wait which applicable for all web elements
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		//Maximize window size
 		driver.manage().window().maximize();
 		//driver.manage().window().minimize();
@@ -146,13 +146,14 @@ public class Test1 {
         js.executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")));
         driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")).click();
         
+        System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyKeySkills\"]//div[@class=\"cnt\"]/p[2]")).getText());
+        
 		//Select Burger button for logout option
 		driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
-		Thread.sleep(5000);
 		//Select logout
 		driver.findElement(By.xpath("//a[text()=\"Logout\"]")).click();
 		
-		Thread.sleep(5000);
+		driver.getTitle();
 		
 		driver.quit();
 	}
