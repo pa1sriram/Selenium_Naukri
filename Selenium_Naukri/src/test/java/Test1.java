@@ -10,11 +10,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Test1 {
 	
+
 	static void updateResume(ChromeDriver driver,WebDriverWait myWait) throws InterruptedException, AWTException {
 		
 		//Select update resume	
@@ -154,8 +156,16 @@ public class Test1 {
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
         
 //		updateResume(driver,myWait);
-//		updateSummery(driver,myWait);
-//		updateKeySkills(driver,myWait);
+		updateSummery(driver,myWait);
+		updateKeySkills(driver,myWait);
+		
+		Actions action= new Actions(driver);
+		
+		WebElement job=driver.findElement(By.xpath("//a[@title=\"Recommended Jobs\"]//div"));
+		
+		WebElement recommendedJobs=driver.findElement(By.xpath("//a[@href='/mnjuser/recommendedjobs']//div[text()='Recommended jobs']"));
+		
+		action.moveToElement(job).moveToElement(recommendedJobs).click().perform();
 		
 		//Select Burger button for logout option
 		driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
