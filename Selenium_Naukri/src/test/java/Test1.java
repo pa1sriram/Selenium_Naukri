@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -120,18 +119,22 @@ public class Test1 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException{
         
-		ChromeOptions options= new ChromeOptions();
-		
-		options.addArguments("--headless=new");
-		options.addArguments("start-maximized");
-		options.addArguments("--disable-gpu");
-		options.addArguments("--disable-extensions"); 
+//		ChromeOptions options= new ChromeOptions();
+//		
+//		options.addArguments("--headless=new");
+//		options.addArguments("--headless");
+//		options.addArguments("--test-type");
+//		options.addArguments("--disable-gpu");
+//		options.addArguments("--no-first-run");
+//		options.addArguments("--no-default-browser-check");
+//		options.addArguments("--ignore-certificate-errors");
+//		options.addArguments("--start-maximized");
 //		options.setHeadless(true);
 	    //Creating driver instance
-		ChromeDriver driver= new ChromeDriver(options);
+		ChromeDriver driver= new ChromeDriver();
         
 		//Implicit wait wait which applicable for all web elements
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
 		//Maximize window size
 		driver.manage().window().maximize();
 		//driver.manage().window().minimize();
@@ -163,9 +166,9 @@ public class Test1 {
 		//View profile
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
         
-//		updateResume(driver,myWait);
-//		updateSummery(driver,myWait);
-//		updateKeySkills(driver,myWait);
+		updateResume(driver,myWait);
+		updateSummery(driver,myWait);
+		updateKeySkills(driver,myWait);
 		
 		Actions action= new Actions(driver);
 		
