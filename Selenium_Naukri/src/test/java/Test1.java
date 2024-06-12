@@ -49,6 +49,7 @@ public class Test1 {
      // Simulate pressing Control+V to paste the file path into the dialog
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
+        
         robot.keyRelease(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_CONTROL);
         Thread.sleep(10000);
@@ -100,7 +101,7 @@ public class Test1 {
 	        	}
 	        }
 	        
-	        driver.findElement(By.xpath("//input[@id=\"keySkillSugg\"]")).sendKeys("Java");
+	        myWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"keySkillSugg\"]"))).sendKeys("Java");
 	        
 	        List<WebElement> skillList=driver.findElements(By.xpath("//li//div[@class=\"Sbtn\"]"));
 	        
