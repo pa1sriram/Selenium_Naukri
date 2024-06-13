@@ -8,8 +8,10 @@ import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -62,8 +64,10 @@ public class Test1 {
 		
 	}
 
-	static void updateSummery(ChromeDriver driver,WebDriverWait myWait) {
+	static void updateSummery(ChromeDriver driver,WebDriverWait myWait) throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']")).click();
+		
+		
         
         WebElement summery=driver.findElement(By.xpath("//textarea[@id='resumeHeadlineTxt']"));
         String ResumeHead=summery.getText();
@@ -80,6 +84,8 @@ public class Test1 {
         
         myWait.until(ExpectedConditions.visibilityOf(summery)).clear();
         
+        Thread.sleep(3000);
+        
        // myWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='resumeHeadlineTxt']"))).sendKeys(ResumeHead);
         myWait.until(ExpectedConditions.visibilityOf(summery)).sendKeys(ResumeHead);
         driver.findElement(By.xpath("//button[text()=\"Save\"]")).click();
@@ -87,8 +93,12 @@ public class Test1 {
         System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyResumeHead\"]//div//div//div//div[@class=\"cnt\"]//p[2]")).getText());
 	}
 	
-	static void updateKeySkills(ChromeDriver driver,WebDriverWait myWait) {
+	static void updateKeySkills(ChromeDriver driver,WebDriverWait myWait,ChromeDriver ts) {
 		 //key Skills updation
+		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+		File targetFile = new File(System.getProperty("user.dir")+"\\ScreenShots\\launch.png");
+		sourceFile.renameTo(targetFile);
+		
 		
 			JavascriptExecutor js=driver;
 	        driver.findElement(By.xpath("//div[@class='widgetHead typ-16Bold']/span[2]")).click();
@@ -120,9 +130,10 @@ public class Test1 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException{
         
-//		ChromeOptions options= new ChromeOptions();
-//		
-//		options.addArguments("--headless=new");
+		ChromeOptions options= new ChromeOptions();
+		
+		options.addArguments("--headless=new");
+		options.addArguments("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36");
 //		options.addArguments("--headless");
 //		options.addArguments("--test-type");
 //		options.addArguments("--disable-gpu");
@@ -132,7 +143,7 @@ public class Test1 {
 //		options.addArguments("--start-maximized");
 //		options.setHeadless(true);
 	    //Creating driver instance
-		ChromeDriver driver= new ChromeDriver();
+		ChromeDriver driver= new ChromeDriver(options);
         
 		//Implicit wait wait which applicable for all web elements
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
@@ -140,8 +151,13 @@ public class Test1 {
 		driver.manage().window().maximize();
 		//driver.manage().window().minimize();
 		
+		//Take screen shoots
+		ChromeDriver ts = driver;
+
 		//Launch Naukri web portal
 		driver.get("https://www.naukri.com/nlogin/login");
+		
+		
 		
 		WebElement username=driver.findElement(By.xpath("//input[@id=\"usernameField\"]"));
 		//Enter user name
@@ -167,9 +183,10 @@ public class Test1 {
 		//View profile
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
         
-		updateResume(driver,myWait);
+		
+//		updateResume(driver,myWait);
 		updateSummery(driver,myWait);
-		updateKeySkills(driver,myWait);
+		updateKeySkills(driver,myWait,ts);
 		
 		Actions action= new Actions(driver);
 		
