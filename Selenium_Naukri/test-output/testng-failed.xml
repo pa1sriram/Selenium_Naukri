@@ -6,6 +6,8 @@
       <class name="ApplyJob">
         <methods>
           <include name="logout"/>
+          <include name="udateResume"/>
+          <include name="login"/>
         </methods>
       </class> <!-- ApplyJob -->
     </classes>
