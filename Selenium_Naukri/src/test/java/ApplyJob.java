@@ -10,11 +10,12 @@ import org.testng.annotations.Test;
 
 public class ApplyJob {
 //	ChromeOptions options;
-	ChromeDriver driver= new ChromeDriver();
-	WebDriverWait myWait= new WebDriverWait(driver,Duration.ofSeconds(10));
+	ChromeDriver driver;
+	WebDriverWait myWait;
   @BeforeClass
   public void login() {
-//	  driver= new ChromeDriver();
+	  driver= new ChromeDriver();
+	  myWait= new WebDriverWait(driver,Duration.ofSeconds(10));
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.manage().window().maximize();
 	  driver.get("https://www.naukri.com/nlogin/login");
@@ -34,6 +35,14 @@ public class ApplyJob {
   @Test(priority=1)
   public void udateResume() throws InterruptedException, AWTException{
 	  TestCase1.updateResume(driver,myWait);
+  }
+  @Test(priority=2)
+  public void updateSummery() {
+	  TestCase2.updateSummery(driver,myWait);
+  }
+  @Test(priority=3)
+  public void updateSkills(){
+	  TestCase3.updateKeySkills(driver,myWait);
   }
   
   @AfterClass
