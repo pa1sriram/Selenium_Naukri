@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase3 {
 	
-	public static void updateKeySkills(ChromeDriver driver,WebDriverWait myWait) {
+	public static String updateKeySkills(ChromeDriver driver,WebDriverWait myWait) {
 		 //key Skills updation
 			JavascriptExecutor js=driver;
 	        driver.findElement(By.xpath("//div[@class='widgetHead typ-16Bold']/span[2]")).click();
@@ -34,10 +34,11 @@ public class TestCase3 {
 	        
 	        js.executeScript("arguments[0].scrollIntoView();",driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")));
 	        driver.findElement(By.xpath("//button[@id=\"saveKeySkills\"]")).click();
-	        
-	        System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyKeySkills\"]//div[@class=\"cnt\"]/p[2]")).getText());
+	        String validate=driver.findElement(By.xpath("//div[@id=\"lazyKeySkills\"]//div[@class=\"cnt\"]/p[2]")).getText();
+	        System.out.println(validate);
 	        
 	        Utility.screenShot(driver,"Skills");
+			return validate;
 	        
 	}
 

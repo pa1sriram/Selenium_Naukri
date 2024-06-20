@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -42,7 +43,8 @@ public class ApplyJob {
   }
   @Test(priority=3)
   public void updateSkills(){
-	  TestCase3.updateKeySkills(driver,myWait);
+	  String validate=TestCase3.updateKeySkills(driver,myWait);
+	  Assert.assertEquals("Key Skills have been successfully saved.",validate);
   }
   
   @AfterClass
