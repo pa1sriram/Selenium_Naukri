@@ -7,6 +7,7 @@
         <methods>
           <include name="logout"/>
           <include name="updateSkills"/>
+          <include name="updateSummery"/>
           <include name="login"/>
         </methods>
       </class> <!-- ApplyJob -->
