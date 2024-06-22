@@ -7,10 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase2 {
 
-//	public static void updateSummer(ChromeDriver driver,WebDriverWait myWait) throws InterruptedException {
-//		
-//	}
-
 	public static void updateSummery(ChromeDriver driver, WebDriverWait myWait) {
 		// TODO Auto-generated method stub
 		driver.findElement(By.xpath("//div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']")).click();

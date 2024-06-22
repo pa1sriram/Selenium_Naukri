@@ -19,17 +19,17 @@ public class ApplyJob {
 	ChromeDriver driver;
 	WebDriverWait myWait;
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void launch() {
 		driver= new ChromeDriver();
-		myWait= new WebDriverWait(driver,Duration.ofSeconds(10));
+		myWait= new WebDriverWait(driver,Duration.ofSeconds(10000));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/nlogin/login");
 		Utility.screenShot(driver,"launch");
 	}
-  @Test(priority=0)
-  public void login() {
+  @Test(priority=0,groups={"sanity","functional"})
+  	public void login() {
 		WebElement username=driver.findElement(By.xpath("//input[@id=\"usernameField\"]"));
 		//Enter user name
 		username.sendKeys("pavansriramjakkampudi@gmail.com");
@@ -41,21 +41,21 @@ public class ApplyJob {
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
   }
   
-  @Test(priority=1,dependsOnMethods= {"login"})
+  @Test(priority=1,dependsOnMethods= {"login"},groups={"functional"})
   public void udateResume() throws InterruptedException, AWTException{
 	  TestCase1.updateResume(driver,myWait);
   }
-  @Test(priority=2)
+  @Test(priority=2,dependsOnMethods= {"login"},groups={"functional"})
   public void updateSummery() {
 	  TestCase2.updateSummery(driver,myWait);
   }
-  @Test(priority=3)
+  @Test(priority=3,dependsOnMethods= {"login"},groups={"functional"})
   public void updateSkills(){
 	  String validate=TestCase3.updateKeySkills(driver,myWait);
 	  Assert.assertEquals("Key Skills have been successfully saved.",validate);
   }
   
-  @Test(priority=4,dependsOnMethods= {"login"})
+  @Test(priority=4,dependsOnMethods= {"login"},groups={"sanity","functional"})
   public void logout(){
 	//Select Burger button for logout option
 	driver.findElement(By.xpath("//img[@alt=\"naukri user profile img\"]")).click();
@@ -63,11 +63,10 @@ public class ApplyJob {
 	driver.findElement(By.xpath("//a[text()=\"Logout\"]")).click();
 			
 	System.out.println(driver.getTitle());
-			
 	
   }
   
-  @AfterClass()
+  @AfterClass(alwaysRun = true)
   void quit() {
 	  driver.quit();
   }
