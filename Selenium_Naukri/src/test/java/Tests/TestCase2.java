@@ -1,17 +1,18 @@
 package Tests;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase2 {
 
-	public static void updateSummery(ChromeDriver driver, WebDriverWait myWait) {
+	public static void updateSummery(WebDriver driver, WebDriverWait myWait) {
 		// TODO Auto-generated method stub
 		driver.findElement(By.xpath("//div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']")).click();
 		
-		Utility.screenShot(driver,"exception");
+		Utility.screenShot((TakesScreenshot)driver,"exception");
         WebElement summery=driver.findElement(By.xpath("//textarea[@id='resumeHeadlineTxt']"));
         String ResumeHead=summery.getText();
         
@@ -33,7 +34,7 @@ public class TestCase2 {
         
         System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyResumeHead\"]//div//div//div//div[@class=\"cnt\"]//p[2]")).getText());
         
-		Utility.screenShot(driver,"Summery");
+		Utility.screenShot((TakesScreenshot)driver,"Summery");
 		
 	}
 }

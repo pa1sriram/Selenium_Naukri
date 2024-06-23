@@ -2,12 +2,17 @@ package TestCases;
 import java.awt.AWTException;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import Tests.TestCase1;
 import Tests.TestCase2;
@@ -16,32 +21,44 @@ import Tests.Utility;
 
 public class ApplyJob {
 //	ChromeOptions options;
-	ChromeDriver driver;
+	WebDriver driver;
 	WebDriverWait myWait;
 	
 	@BeforeClass(alwaysRun = true)
-	public void launch() {
-		driver= new ChromeDriver();
+	@Parameters({"browser"})
+	public void launch(String webDrivers) {
+		switch(webDrivers){
+		case "chrome":
+			driver=new ChromeDriver();
+			break;
+		case "edge":
+			driver=new EdgeDriver();
+			break;
+		default:
+			System.out.println("Invalid browser");
+			return;//return statement will stop execution of setup and test
+		}
+//		driver= new ChromeDriver();
 		myWait= new WebDriverWait(driver,Duration.ofSeconds(10000));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/nlogin/login");
-		Utility.screenShot(driver,"launch");
+		Utility.screenShot((TakesScreenshot)driver,"launch");
 	}
-  @Test(priority=0,groups={"sanity","functional"})
-  	public void login() {
+  @Test(priority=0,groups={"sanity","functional"},dataProvider="dp")
+  	public void login(String email,String Password) {
 		WebElement username=driver.findElement(By.xpath("//input[@id=\"usernameField\"]"));
 		//Enter user name
-		username.sendKeys("pavansriramjakkampudi@gmail.com");
+		username.sendKeys(email);
 		WebElement password=driver.findElement(By.xpath("//input[@id=\"passwordField\"]"));
 		//Enter Password
-		password.sendKeys("NAUKRIpowerp@1");
+		password.sendKeys(Password);
 		//Select login key to login
 		driver.findElement(By.xpath("//button[text()=\"Login\"]")).click();
 		driver.findElement(By.xpath("//a[text()=\"View\"]")).click();
   }
   
-  @Test(priority=1,dependsOnMethods= {"login"},groups={"functional"})
+  @Test(priority=1,dependsOnMethods= {"login"},groups={"functional","nonFunctionla"})
   public void udateResume() throws InterruptedException, AWTException{
 	  TestCase1.updateResume(driver,myWait);
   }
@@ -66,6 +83,13 @@ public class ApplyJob {
 	
   }
   
+  @DataProvider(name="dp")
+  Object[][] loginData(){
+	  Object data[][]= {{"pavansriramjakkampudi@gmail.com","NAUKRIpowerp@1"},
+	  					};
+	  return data;
+  }
+	  
   @AfterClass(alwaysRun = true)
   void quit() {
 	  driver.quit();

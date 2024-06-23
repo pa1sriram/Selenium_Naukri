@@ -7,13 +7,13 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase1 {
 
-	public static void updateResume(ChromeDriver driver,WebDriverWait myWait) throws InterruptedException, AWTException {
+	public static void updateResume(WebDriver driver,WebDriverWait myWait) throws InterruptedException, AWTException {
 		
 		//Select update resume	
 		//driver.findElement(By.xpath("//input[@value=\"Update resume\"]")).sendKeys("E:\\wipro\\servlets\\Selenium_Naukri\\src\\test\\resources\\Pavan's Resume.pdf");
