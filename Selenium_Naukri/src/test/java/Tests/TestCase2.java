@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase2 {
 
-	public static void updateSummery(WebDriver driver, WebDriverWait myWait) {
+	public static String updateSummery(WebDriver driver, WebDriverWait myWait) {
 		// TODO Auto-generated method stub
 		driver.findElement(By.xpath("//div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']")).click();
 		
@@ -32,9 +32,11 @@ public class TestCase2 {
         myWait.until(ExpectedConditions.visibilityOf(summery)).sendKeys(ResumeHead);
         driver.findElement(By.xpath("//button[text()=\"Save\"]")).click();
         
-        System.out.println(driver.findElement(By.xpath("//div[@id=\"lazyResumeHead\"]//div//div//div//div[@class=\"cnt\"]//p[2]")).getText());
+        String result=driver.findElement(By.xpath("//div[@id=\"lazyResumeHead\"]//div//div//div//div[@class=\"cnt\"]//p[2]")).getText();
+        System.out.println(result);
         
 		Utility.screenShot((TakesScreenshot)driver,"Summery");
 		
+		return result;
 	}
 }

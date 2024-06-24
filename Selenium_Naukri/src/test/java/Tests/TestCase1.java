@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestCase1 {
 
-	public static void updateResume(WebDriver driver,WebDriverWait myWait) throws InterruptedException, AWTException {
+	public static String updateResume(WebDriver driver,WebDriverWait myWait) throws InterruptedException, AWTException {
 		
 		//Select update resume	
 		//driver.findElement(By.xpath("//input[@value=\"Update resume\"]")).sendKeys("E:\\wipro\\servlets\\Selenium_Naukri\\src\\test\\resources\\Pavan's Resume.pdf");
@@ -54,7 +54,11 @@ public class TestCase1 {
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         
-        System.out.println(driver.findElement(By.xpath("//div//span[@id=\"attachCVMsgBox\"]//p[2]")).getText());
+        String result=driver.findElement(By.xpath("//div//span[@id=\"attachCVMsgBox\"]//p[2]")).getText();
+        
+        System.out.println(result);
+        
+        return result;
 		
 	}
 

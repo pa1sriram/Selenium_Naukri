@@ -39,7 +39,7 @@ public class ApplyJob {
 			return;//return statement will stop execution of setup and test
 		}
 //		driver= new ChromeDriver();
-		myWait= new WebDriverWait(driver,Duration.ofSeconds(10000));
+		myWait= new WebDriverWait(driver,Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/nlogin/login");
@@ -60,11 +60,13 @@ public class ApplyJob {
   
   @Test(priority=1,dependsOnMethods= {"login"},groups={"functional","nonFunctionla"})
   public void udateResume() throws InterruptedException, AWTException{
-	  TestCase1.updateResume(driver,myWait);
+	  String result=TestCase1.updateResume(driver,myWait);
+	  Assert.assertEquals(result,"Resume Headline has been successfully saved.");
   }
   @Test(priority=2,dependsOnMethods= {"login"},groups={"functional"})
   public void updateSummery() {
-	  TestCase2.updateSummery(driver,myWait);
+	  String result=TestCase2.updateSummery(driver,myWait);
+	  Assert.assertEquals(result,"Resume Headline has been successfully saved.");
   }
   @Test(priority=3,dependsOnMethods= {"login"},groups={"functional"})
   public void updateSkills(){
