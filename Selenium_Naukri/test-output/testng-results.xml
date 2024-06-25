@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-24T22:04:44 IST" name="Suite" finished-at="2024-06-24T22:05:37 IST" duration-ms="52606">
+  <suite started-at="2024-06-26T00:13:05 IST" name="Suite" finished-at="2024-06-26T00:14:09 IST" duration-ms="63916">
     <groups>
       <group name="functional">
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@1cf56a1c]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@1cf56a1c]" name="updateSummery" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@1cf56a1c]" name="updateSkills" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@1cf56a1c]" name="logout" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@6ea2bc93]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@6ea2bc93]" name="updateSummery" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@6ea2bc93]" name="updateSkills" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@6ea2bc93]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5f049ea1]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@5f049ea1]" name="updateSummery" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@5f049ea1]" name="updateSkills" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5f049ea1]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@5965d37]" name="updateSummery" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@5965d37]" name="updateSkills" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" name="logout" class="TestCases.ApplyJob"/>
       </group> <!-- functional -->
       <group name="sanity">
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@1cf56a1c]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@1cf56a1c]" name="logout" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@6ea2bc93]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@6ea2bc93]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5f049ea1]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5f049ea1]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" name="logout" class="TestCases.ApplyJob"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-06-24T22:04:44 IST" name="Test" finished-at="2024-06-24T22:05:33 IST" duration-ms="48409">
+    <test started-at="2024-06-26T00:13:05 IST" name="Test" finished-at="2024-06-26T00:14:08 IST" duration-ms="62446">
       <class name="TestCases.ApplyJob">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:04:44 IST" name="launch" finished-at="2024-06-24T22:04:57 IST" duration-ms="12338" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:13:05 IST" name="launch" finished-at="2024-06-26T00:13:47 IST" duration-ms="41860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:04:57 IST" name="login" data-provider="dp" finished-at="2024-06-24T22:05:18 IST" duration-ms="21538" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:13:47 IST" name="login" data-provider="dp" finished-at="2024-06-26T00:13:56 IST" duration-ms="8780" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,27 +50,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:05:18 IST" name="updateSummery" finished-at="2024-06-24T22:05:28 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="9445" status="PASS">
+        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:13:56 IST" name="updateSummery" finished-at="2024-06-26T00:14:03 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="7182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSummery -->
-        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:05:28 IST" name="updateSkills" finished-at="2024-06-24T22:05:31 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="3495" status="PASS">
+        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:14:03 IST" name="updateSkills" finished-at="2024-06-26T00:14:06 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="2517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSkills -->
-        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:05:31 IST" name="logout" finished-at="2024-06-24T22:05:32 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="688" status="PASS">
+        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:14:06 IST" name="logout" finished-at="2024-06-26T00:14:06 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@1cf56a1c]" started-at="2024-06-24T22:05:32 IST" name="quit" finished-at="2024-06-24T22:05:33 IST" duration-ms="700" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@5f049ea1]" started-at="2024-06-26T00:14:06 IST" name="quit" finished-at="2024-06-26T00:14:08 IST" duration-ms="1474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- TestCases.ApplyJob -->
     </test> <!-- Test -->
-    <test started-at="2024-06-24T22:04:44 IST" name="Test2" finished-at="2024-06-24T22:05:37 IST" duration-ms="52606">
+    <test started-at="2024-06-26T00:13:05 IST" name="Test2" finished-at="2024-06-26T00:14:09 IST" duration-ms="63895">
       <class name="TestCases.ApplyJob">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:04:44 IST" name="launch" finished-at="2024-06-24T22:04:59 IST" duration-ms="14970" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:13:05 IST" name="launch" finished-at="2024-06-26T00:13:24 IST" duration-ms="18518" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:04:59 IST" name="login" data-provider="dp" finished-at="2024-06-24T22:05:22 IST" duration-ms="22690" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:13:24 IST" name="login" data-provider="dp" finished-at="2024-06-26T00:13:43 IST" duration-ms="19086" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,19 +97,207 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:05:22 IST" name="updateSummery" finished-at="2024-06-24T22:05:31 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="8862" status="PASS">
+        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:13:43 IST" name="updateSummery" finished-at="2024-06-26T00:13:55 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="11951" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']]
+Session ID: 006adc0507e871437bd387f6c4761100]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //div[@class='widgetHead']//span[@class='edit icon'][text()='editOneTheme']]
+Session ID: 006adc0507e871437bd387f6c4761100
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Tests.TestCase2.updateSummery(TestCase2.java:13)
+at TestCases.ApplyJob.updateSummery(ApplyJob.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSummery -->
-        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:05:31 IST" name="updateSkills" finished-at="2024-06-24T22:05:34 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="3642" status="PASS">
+        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:13:55 IST" name="updateSkills" finished-at="2024-06-26T00:14:05 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="10419" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //div[@class='widgetHead typ-16Bold']/span[2]]
+Session ID: 006adc0507e871437bd387f6c4761100]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //div[@class='widgetHead typ-16Bold']/span[2]]
+Session ID: 006adc0507e871437bd387f6c4761100
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Tests.TestCase3.updateKeySkills(TestCase3.java:17)
+at TestCases.ApplyJob.updateSkills(ApplyJob.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSkills -->
-        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:05:34 IST" name="logout" finished-at="2024-06-24T22:05:35 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="455" status="PASS">
+        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:14:05 IST" name="logout" finished-at="2024-06-26T00:14:07 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="1177" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <img alt="naukri user profile img" class="nI-gNb-icon-img" src="blob:https://www.naukri.com/f40587ab-5693-4c01-a687-b2a69ba3696f"> is not clickable at point (1169, 37). Other element would receive the click: <div class="chatbot_Nav" id="_onhzmtcglNavbar">...</div>
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //img[@alt="naukri user profile img"]]
+Session ID: 006adc0507e871437bd387f6c4761100]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img alt="naukri user profile img" class="nI-gNb-icon-img" src="blob:https://www.naukri.com/f40587ab-5693-4c01-a687-b2a69ba3696f"> is not clickable at point (1169, 37). Other element would receive the click: <div class="chatbot_Nav" id="_onhzmtcglNavbar">...</div>
+  (Session info: MicrosoftEdge=125.0.2535.51)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [006adc0507e871437bd387f6c4761100, clickElement {id=f.F9577BFD552982C5FAA8258C9A002204.d.1C4D40CF3C477D92D4AA0B8137B10C99.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60783}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60783/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (006adc0507e871437bd387f6c4761100)] -> xpath: //img[@alt="naukri user profile img"]]
+Session ID: 006adc0507e871437bd387f6c4761100
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at TestCases.ApplyJob.logout(ApplyJob.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@6ea2bc93]" started-at="2024-06-24T22:05:35 IST" name="quit" finished-at="2024-06-24T22:05:37 IST" duration-ms="1888" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-26T00:14:07 IST" name="quit" finished-at="2024-06-26T00:14:09 IST" duration-ms="2563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="edge"/>
     <groups>
       <run>
         <include name="functional"/>
@@ -16,9 +16,10 @@
           <include name="launch"/>
           <include name="updateSkills"/>
           <include name="login"/>
+          <include name="updateSummery"/>
           <include name="logout"/>
         </methods>
       </class> <!-- TestCases.ApplyJob -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
