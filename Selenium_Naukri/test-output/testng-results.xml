@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-28T23:10:57 IST" name="Suite" finished-at="2024-06-28T23:12:12 IST" duration-ms="75539">
+  <suite started-at="2024-06-29T12:51:57 IST" name="Suite" finished-at="2024-06-29T12:53:30 IST" duration-ms="92930">
     <groups>
       <group name="functional">
         <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.udateResume()[pri:1, instance:TestCases.ApplyJob@72cc7e6f]" name="udateResume" class="TestCases.ApplyJob"/>
         <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@72cc7e6f]" name="updateSummery" class="TestCases.ApplyJob"/>
         <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@72cc7e6f]" name="updateSkills" class="TestCases.ApplyJob"/>
         <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@72cc7e6f]" name="logout" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@4201c465]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@4201c465]" name="updateSummery" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@4201c465]" name="updateSkills" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@4201c465]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSummery()[pri:2, instance:TestCases.ApplyJob@5965d37]" name="updateSummery" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.updateSkills()[pri:3, instance:TestCases.ApplyJob@5965d37]" name="updateSkills" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" name="logout" class="TestCases.ApplyJob"/>
       </group> <!-- functional -->
+      <group name="nonFunctionla">
+        <method signature="ApplyJob.udateResume()[pri:1, instance:TestCases.ApplyJob@72cc7e6f]" name="udateResume" class="TestCases.ApplyJob"/>
+      </group> <!-- nonFunctionla -->
       <group name="sanity">
         <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" name="login" class="TestCases.ApplyJob"/>
         <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@72cc7e6f]" name="logout" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@4201c465]" name="login" class="TestCases.ApplyJob"/>
-        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@4201c465]" name="logout" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" name="login" class="TestCases.ApplyJob"/>
+        <method signature="ApplyJob.logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" name="logout" class="TestCases.ApplyJob"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-06-28T23:10:57 IST" name="Test" finished-at="2024-06-28T23:11:56 IST" duration-ms="59362">
+    <test started-at="2024-06-29T12:51:57 IST" name="Test" finished-at="2024-06-29T12:53:05 IST" duration-ms="68497">
       <class name="TestCases.ApplyJob">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:10:57 IST" name="launch" finished-at="2024-06-28T23:11:11 IST" duration-ms="14108" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:51:57 IST" name="launch" finished-at="2024-06-29T12:52:07 IST" duration-ms="9771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:11:11 IST" name="login" data-provider="dp" finished-at="2024-06-28T23:11:25 IST" duration-ms="13755" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:52:07 IST" name="login" data-provider="dp" finished-at="2024-06-29T12:52:15 IST" duration-ms="7259" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,27 +54,75 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:11:25 IST" name="updateSummery" finished-at="2024-06-28T23:11:41 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="15849" status="PASS">
+        <test-method signature="udateResume()[pri:1, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:52:15 IST" name="udateResume" finished-at="2024-06-29T12:52:58 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="43623" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Resume Headline has been successfully saved.] but found [Resume has been successfully uploaded.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Resume Headline has been successfully saved.] but found [Resume has been successfully uploaded.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at TestCases.ApplyJob.udateResume(ApplyJob.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- udateResume -->
+        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:52:58 IST" name="updateSummery" finished-at="2024-06-29T12:53:02 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="3674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSummery -->
-        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:11:41 IST" name="updateSkills" finished-at="2024-06-28T23:11:46 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="5062" status="PASS">
+        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:53:02 IST" name="updateSkills" finished-at="2024-06-29T12:53:04 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="2248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSkills -->
-        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:11:46 IST" name="logout" finished-at="2024-06-28T23:11:54 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="7563" status="PASS">
+        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:53:04 IST" name="logout" finished-at="2024-06-29T12:53:05 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-28T23:11:54 IST" name="quit" finished-at="2024-06-28T23:11:56 IST" duration-ms="2181" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@72cc7e6f]" started-at="2024-06-29T12:53:05 IST" name="quit" finished-at="2024-06-29T12:53:05 IST" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- TestCases.ApplyJob -->
     </test> <!-- Test -->
-    <test started-at="2024-06-28T23:10:57 IST" name="Test2" finished-at="2024-06-28T23:12:12 IST" duration-ms="75539">
+    <test started-at="2024-06-29T12:53:06 IST" name="Test2" finished-at="2024-06-29T12:53:30 IST" duration-ms="23777">
       <class name="TestCases.ApplyJob">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:10:58 IST" name="launch" finished-at="2024-06-28T23:11:15 IST" duration-ms="16830" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:06 IST" name="launch" finished-at="2024-06-29T12:53:14 IST" duration-ms="7701" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:11:15 IST" name="login" data-provider="dp" finished-at="2024-06-28T23:11:37 IST" duration-ms="22097" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:14 IST" name="login" data-provider="dp" finished-at="2024-06-29T12:53:19 IST" duration-ms="5109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,19 +149,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:11:37 IST" name="updateSummery" finished-at="2024-06-28T23:11:51 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="14385" status="PASS">
+        <test-method signature="updateSummery()[pri:2, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:19 IST" name="updateSummery" finished-at="2024-06-29T12:53:25 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="6418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSummery -->
-        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:11:51 IST" name="updateSkills" finished-at="2024-06-28T23:11:57 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="6220" status="PASS">
+        <test-method signature="updateSkills()[pri:3, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:25 IST" name="updateSkills" finished-at="2024-06-29T12:53:28 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="2517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSkills -->
-        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:11:57 IST" name="logout" finished-at="2024-06-28T23:12:10 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="12361" status="PASS">
+        <test-method signature="logout()[pri:4, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:28 IST" name="logout" finished-at="2024-06-29T12:53:28 IST" depends-on-methods="TestCases.ApplyJob.login" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@4201c465]" started-at="2024-06-28T23:12:10 IST" name="quit" finished-at="2024-06-28T23:12:12 IST" duration-ms="2396" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:TestCases.ApplyJob@5965d37]" started-at="2024-06-29T12:53:28 IST" name="quit" finished-at="2024-06-29T12:53:30 IST" duration-ms="1552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
