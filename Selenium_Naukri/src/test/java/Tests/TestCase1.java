@@ -25,7 +25,7 @@ public class TestCase1 {
         String currentDirectory = System.getProperty("user.dir");
 
         // Specify the relative path of the file to upload
-        String relativeFilePath ="Pavan_Resume.pdf";
+        String relativeFilePath ="Pavan_Resume_per.pdf";
         // Combine the current directory path with the relative file path
         String absoluteFilePath = currentDirectory + File.separator + relativeFilePath;
         // Create a StringSelection object with the absolute file path

@@ -61,7 +61,7 @@ public class ApplyJob {
   @Test(priority=1,dependsOnMethods= {"login"},groups={"functional","nonFunctionla"})
   public void udateResume() throws InterruptedException, AWTException{
 	  String result=TestCase1.updateResume(driver,myWait);
-	  Assert.assertEquals(result,"Resume Headline has been successfully saved.");
+	  Assert.assertEquals(result,"Resume has been successfully uploaded.");
   }
   @Test(priority=2,dependsOnMethods= {"login"},groups={"functional"})
   public void updateSummery() {

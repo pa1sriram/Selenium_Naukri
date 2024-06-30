@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -133,6 +133,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.ApplyJob" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.ApplyJob" class="method navigator-link" hash-for-method="udateResume">udateResume</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -178,10 +183,30 @@
                   <a name="udateResume">
                   </a> <!-- udateResume -->
                   <span class="method-name">udateResume</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Resume Headline has been successfully saved.] but found [Resume has been successfully uploaded.]
-	at TestCases.ApplyJob.udateResume(ApplyJob.java:64)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//span[@id=&quot;attachCVMsgBox&quot;]//p[2]&quot;}
+  (Session info: MicrosoftEdge=125.0.2535.51)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [30eeae1f2f66829499ce3217fa27f728, findElement {using=xpath, value=//div//span[@id=&quot;attachCVMsgBox&quot;]//p[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50272}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50272/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30eeae1f2f66829499ce3217fa27f728
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Tests.TestCase1.updateResume(TestCase1.java:57)
+	at TestCases.ApplyJob.udateResume(ApplyJob.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -221,6 +246,13 @@
                   <a name="logout">
                   </a> <!-- logout -->
                   <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="udateResume">
+                  </a> <!-- udateResume -->
+                  <span class="method-name">udateResume</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -282,7 +314,6 @@
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;functional&quot;/&gt;
-        &lt;exclude name=&quot;nonFunctionla&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -373,48 +404,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'udateResume')
 data.setCell(0, 2, 'TestCases.ApplyJob')
-data.setCell(0, 3, 43623);
+data.setCell(0, 3, 53482);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'udateResume')
 data.setCell(1, 2, 'TestCases.ApplyJob')
-data.setCell(1, 3, 7259);
+data.setCell(1, 3, 43895);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateSummery')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'TestCases.ApplyJob')
-data.setCell(2, 3, 6418);
+data.setCell(2, 3, 8702);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'login')
 data.setCell(3, 2, 'TestCases.ApplyJob')
-data.setCell(3, 3, 5109);
+data.setCell(3, 3, 6126);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'updateSummery')
 data.setCell(4, 2, 'TestCases.ApplyJob')
-data.setCell(4, 3, 3674);
+data.setCell(4, 3, 4043);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'updateSkills')
 data.setCell(5, 2, 'TestCases.ApplyJob')
-data.setCell(5, 3, 2517);
+data.setCell(5, 3, 3474);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'updateSkills')
+data.setCell(6, 1, 'updateSummery')
 data.setCell(6, 2, 'TestCases.ApplyJob')
-data.setCell(6, 3, 2248);
+data.setCell(6, 3, 3402);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'logout')
+data.setCell(7, 1, 'updateSkills')
 data.setCell(7, 2, 'TestCases.ApplyJob')
-data.setCell(7, 3, 436);
+data.setCell(7, 3, 1999);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'logout')
 data.setCell(8, 2, 'TestCases.ApplyJob')
-data.setCell(8, 3, 406);
+data.setCell(8, 3, 449);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'logout')
+data.setCell(9, 2, 'TestCases.ApplyJob')
+data.setCell(9, 3, 382);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -429,16 +464,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.ApplyJob</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">udateResume</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -454,53 +482,57 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login(pavansriramjakkampudi@gmail.com, NAUKRIpowerp@1)</span>
-                <span class="method-start">9788 ms</span>
+                <span class="method-start">21367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">udateResume</span>
+                <span class="method-start">27603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateSummery</span>
+                <span class="method-start">71501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateSkills</span>
+                <span class="method-start">75550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">79029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">79414 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">launch(edge)</span>
+                <span class="method-start">80640 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login(pavansriramjakkampudi@gmail.com, NAUKRIpowerp@1)</span>
+                <span class="method-start">90802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">udateResume</span>
-                <span class="method-start">17116 ms</span>
+                <span class="method-start">99519 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateSummery</span>
-                <span class="method-start">60746 ms</span>
+                <span class="method-start">153017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateSkills</span>
-                <span class="method-start">64424 ms</span>
+                <span class="method-start">156424 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">66677 ms</span>
+                <span class="method-start">158427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">67094 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class before">
-                <span class="method-name">launch(edge)</span>
-                <span class="method-start">68392 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">login(pavansriramjakkampudi@gmail.com, NAUKRIpowerp@1)</span>
-                <span class="method-start">76094 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">updateSummery</span>
-                <span class="method-start">81220 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">updateSkills</span>
-                <span class="method-start">87645 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">logout</span>
-                <span class="method-start">90166 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quit</span>
-                <span class="method-start">90607 ms</span>
+                <span class="method-start">158882 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

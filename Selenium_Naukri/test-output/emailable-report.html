@@ -9,24 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">68,497</td><td>functional</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,777</td><td>functional</td><td>nonFunctionla</td></tr>
-<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">92,274</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">80,837</td><td>functional</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">79,954</td><td>functional</td><td></td></tr>
+<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">160,791</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.ApplyJob</td><td><a href="#m0">udateResume</a></td><td rowspan="1">1719645735103</td><td rowspan="1">43623</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.ApplyJob</td><td><a href="#m1">login</a></td><td rowspan="1">1719645727775</td><td rowspan="1">7259</td></tr><tr class="passedeven"><td><a href="#m2">logout</a></td><td rowspan="1">1719645784664</td><td rowspan="1">406</td></tr><tr class="passedeven"><td><a href="#m3">updateSkills</a></td><td rowspan="1">1719645782411</td><td rowspan="1">2248</td></tr><tr class="passedeven"><td><a href="#m4">updateSummery</a></td><td rowspan="1">1719645778733</td><td rowspan="1">3674</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.ApplyJob</td><td><a href="#m5">login</a></td><td rowspan="1">1719645794081</td><td rowspan="1">5109</td></tr><tr class="passedeven"><td><a href="#m6">logout</a></td><td rowspan="1">1719645808153</td><td rowspan="1">436</td></tr><tr class="passedeven"><td><a href="#m7">updateSkills</a></td><td rowspan="1">1719645805632</td><td rowspan="1">2517</td></tr><tr class="passedeven"><td><a href="#m8">updateSummery</a></td><td rowspan="1">1719645799207</td><td rowspan="1">6418</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">TestCases.ApplyJob</td><td><a href="#m0">login</a></td><td rowspan="1">1719733154882</td><td rowspan="1">6126</td></tr><tr class="passedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1719733212544</td><td rowspan="1">382</td></tr><tr class="passedeven"><td><a href="#m2">udateResume</a></td><td rowspan="1">1719733161118</td><td rowspan="1">43895</td></tr><tr class="passedeven"><td><a href="#m3">updateSkills</a></td><td rowspan="1">1719733209065</td><td rowspan="1">3474</td></tr><tr class="passedeven"><td><a href="#m4">updateSummery</a></td><td rowspan="1">1719733205016</td><td rowspan="1">4043</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.ApplyJob</td><td><a href="#m5">udateResume</a></td><td rowspan="1">1719733233034</td><td rowspan="1">53482</td></tr><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCases.ApplyJob</td><td><a href="#m6">login</a></td><td rowspan="1">1719733224317</td><td rowspan="1">8702</td></tr><tr class="passedeven"><td><a href="#m7">logout</a></td><td rowspan="1">1719733291942</td><td rowspan="1">449</td></tr><tr class="passedeven"><td><a href="#m8">updateSkills</a></td><td rowspan="1">1719733289939</td><td rowspan="1">1999</td></tr><tr class="passedeven"><td><a href="#m9">updateSummery</a></td><td rowspan="1">1719733286532</td><td rowspan="1">3402</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestCases.ApplyJob#udateResume</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Resume Headline has been successfully saved.] but found [Resume has been successfully uploaded.]
-	at TestCases.ApplyJob.udateResume(ApplyJob.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.ApplyJob#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>pavansriramjakkampudi@gmail.com</td><td>NAUKRIpowerp@1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.ApplyJob#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestCases.ApplyJob#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>pavansriramjakkampudi@gmail.com</td><td>NAUKRIpowerp@1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.ApplyJob#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.ApplyJob#udateResume</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">TestCases.ApplyJob#updateSkills</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">TestCases.ApplyJob#updateSummery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test2</h2><h3 id="m5">TestCases.ApplyJob#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>pavansriramjakkampudi@gmail.com</td><td>NAUKRIpowerp@1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestCases.ApplyJob#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestCases.ApplyJob#updateSkills</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">TestCases.ApplyJob#updateSummery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m5">TestCases.ApplyJob#udateResume</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//span[@id=&quot;attachCVMsgBox&quot;]//p[2]&quot;}
+  (Session info: MicrosoftEdge=125.0.2535.51)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [30eeae1f2f66829499ce3217fa27f728, findElement {using=xpath, value=//div//span[@id=&quot;attachCVMsgBox&quot;]//p[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.51, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50272}, msedge: {msedgedriverVersion: 125.0.2535.92 (d2d4746171db..., userDataDir: C:\Users\INDIA\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50272/devtoo..., se:cdpVersion: 125.0.2535.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30eeae1f2f66829499ce3217fa27f728
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Tests.TestCase1.updateResume(TestCase1.java:57)
+	at TestCases.ApplyJob.udateResume(ApplyJob.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.ApplyJob#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>pavansriramjakkampudi@gmail.com</td><td>NAUKRIpowerp@1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.ApplyJob#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCases.ApplyJob#updateSkills</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCases.ApplyJob#updateSummery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
