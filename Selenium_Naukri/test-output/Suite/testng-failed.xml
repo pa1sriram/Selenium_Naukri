@@ -4,8 +4,8 @@
   <listeners>
     <listener class-name="TestCases.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="functional"/>
@@ -14,12 +14,13 @@
     <classes>
       <class name="TestCases.ApplyJob">
         <methods>
-          <include name="launch"/>
           <include name="quit"/>
+          <include name="launch"/>
+          <include name="updateSkills"/>
           <include name="login"/>
-          <include name="udateResume"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- TestCases.ApplyJob -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
